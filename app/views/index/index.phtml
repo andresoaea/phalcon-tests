@@ -1,0 +1,39 @@
+<div class="py-4">
+    <div class="row">
+    <?php
+    foreach ($uploadedFiles as $file) {
+        ?>
+        <div class="col-6">
+            <video controls id="video-tag" autostart="0" class="w-100">
+                <source id="video-source" src="/<?php echo $file; ?>">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+<!--        <div><a href="/--><?php //echo $file; ?><!--">--><?php //echo $file ?><!--</a></div>-->
+    <?php }
+    ?>
+    </div>
+</div>
+
+<div id="container">
+    <span id="pickfiles">[Upload files]</span>
+</div>
+<div id="filelist">Your browser doesn't have Flash, Silverlight or HTML5 support.</div>
+
+<br><br>
+
+
+<div class="row">
+    <div class="col-6">
+        <video controls id="video-tag" autostart="0" class="w-100" style="display: none">
+            <source id="video-source" src="splashVideo">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div>
+
+
+
+<br><br>
+
+<button class="upload">Upload video</button>
